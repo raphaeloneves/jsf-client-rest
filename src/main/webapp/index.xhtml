@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</h:head>
+
+	<h:body>
+	
+		<h3>Cliente Webservice - JSF, Primefaces, Gson, Java Net</h3>
+	
+		<p:dataTable var="emp" value="#{empregoBean.empregos}" emptyMessage="Nenhum registro encontrado">
+			
+			<p:column headerText="Código">
+				<h:outputText value="#{emp.codPosto}" />
+			</p:column>
+			<p:column headerText="Nome">
+				<h:outputText value="#{emp.nome}" />
+			</p:column>
+			<p:column headerText="Entidade Conveniada">
+				<h:outputText value="#{emp.entidadeConveniada}" />
+			</p:column>
+			<p:column headerText="Endereço" style="width: 500px;">
+				<h:outputText value="#{emp.endereco}" /> - <h:outputText value="#{emp.municipio}" />/<h:outputText value="#{emp.uf}" />
+			</p:column>
+		
+		</p:dataTable>
+	
+	
+	
+	</h:body>
+	
+</html>
