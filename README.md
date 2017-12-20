@@ -1,9 +1,8 @@
-# jsf-client-webservice
+# Java Server Faces WS Client
 
-Cliente webservice sendo utilizado por aplicação JSF e Primefaces.
+This is a tiny example about how to consume a webservice using Faces.
 
-* MB chama o servico do cliente webservice.
-* Aplicação solicita a lista de empregos para o webservice público do governo.
-* Servidor webservice devolve a lista de quinze empregos em formato JSON.
-* Cliente webservice converte a requisição em uma lista da entidade Empregos.
-* Renderiza os empregos no componente dataTable do Primefaces.
+* ManagedBean calls WS service
+* WS gets an avaiable job list from a Government service
+* The response is converted into a valid Java entity
+* The list is rendered at a Primefaces' dataTable component.
